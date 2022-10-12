@@ -1,0 +1,52 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/solids/protos/SolidTorus.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6178365912193232 -0.11257199390246601 0.7782065874427627 3.4233032894517383
+  position 1.3196730113382595 0.4656841748902747 3.4525555230515725
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.4 0.4 0
+}
+DEF e_puck E-puck {
+  translation 0.0374714 0.0447734 -6.39459e-05
+  rotation 0.03657598786484303 -0.0006420447869828069 0.9993306684427343 0
+  controller "Q4_m"
+  supervisor TRUE
+}
+SolidTorus {
+  translation 0.666964 0.660602 4.88498e-15
+  majorRadius 0.05
+  minorRadius 0.05
+}
+SolidTorus {
+  translation 0.339573 0.188852 -3.99681e-15
+  rotation 0 0 1 4.692820414042842e-06
+  name "torus(1)"
+  majorRadius 0.05
+  minorRadius 0.05
+}
+SolidTorus {
+  translation 0.681052 0.299091 -8.88222e-16
+  name "torus(2)"
+  majorRadius 0.05
+  minorRadius 0.05
+}
+SolidTorus {
+  translation 0.048474 0.503849 2.64233e-14
+  rotation 0 1 0 0
+  name "torus(3)"
+  majorRadius 0.05
+  minorRadius 0.05
+}
