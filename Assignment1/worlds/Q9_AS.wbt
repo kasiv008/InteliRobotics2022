@@ -1,0 +1,83 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/devices/robotis/protos/RobotisLds01.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/solids/protos/SolidPipe.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.7313302194158025 0.05065082309113274 0.6801401357730811 3.047455158873006
+  position 2.28313376411687 1.7986033811347384 8.207719695648148
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 1.5 1.5 0
+  floorSize 3 3
+  wallHeight 0.2
+}
+DEF pursuer_1 TurtleBot3Burger {
+  translation 1.18802 1.54716 0.0997635
+  rotation 0.0026743294526391523 -0.006423138685362182 0.9999757953327708 -0.7854153071795862
+  controller "pursuer"
+  supervisor TRUE
+  extensionSlot [
+    RobotisLds01 {
+      rotation 0 0 -1 -1.8325953071795862
+      noise 0
+    }
+  ]
+}
+DEF evader TurtleBot3Burger {
+  translation 1.8354 2.21871 -0.000247289
+  rotation -0.002323790564181392 0.000338262082124945 0.9999972427842876 -2.905715307179586
+  name "evader"
+  controller "turtlebot3_ostacle_avoidance"
+  supervisor TRUE
+  extensionSlot [
+    RobotisLds01 {
+      noise 0
+    }
+  ]
+}
+SolidPipe {
+  translation 1.68077 1.79186 0.2
+  height 0.4
+  radius 0.3
+  thickness 0.4
+}
+SolidPipe {
+  translation 0.6131 2.11428 0.2
+  name "pipe(1)"
+  height 0.4
+  radius 0.3
+  thickness 0.4
+}
+SolidPipe {
+  translation 1.31083 0.747286 0.2
+  name "pipe(2)"
+  height 0.4
+  radius 0.3
+  thickness 0.4
+}
+SolidPipe {
+  translation 2.17385 2.61697 0.2
+  name "pipe(3)"
+  height 0.4
+  radius 0.3
+  thickness 0.4
+}
+SolidPipe {
+  translation 2.59436 1.1097 0.2
+  rotation 0 0 1 -0.261795307179586
+  name "pipe(4)"
+  height 0.4
+  radius 0.3
+  thickness 0.4
+}
