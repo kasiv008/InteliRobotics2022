@@ -20,13 +20,19 @@ DEF e_puck E-puck {
   translation 0 -0.45 -6.39618e-05
   rotation 0 0 1 1.5708
   name "e_puck"
-  controller "BUG1"
+  controller "BUG0"
   supervisor TRUE
 }
 Wall {
   translation -0.17016 0.0501552 0
   rotation 0 0 1 1.5707963267948968
   size 0.225 0.01 0.1
+}
+Wall {
+  translation 0.0750196 -0.00816866 -7.32747e-15
+  rotation 0 0 1 1.5707963267948968
+  name "wall(5)"
+  size 0.1 0.01 0.1
 }
 Wall {
   translation 0.178235 0.000388118 -8.88179e-15
@@ -40,8 +46,14 @@ Wall {
   size 0.25 0.01 0.1
 }
 Wall {
-  translation -0.0449412 -0.0567667 0
+  translation 0.0235949 0.0382923 -1.11022e-14
+  rotation 0 1 0 0
   name "wall(4)"
+  size 0.1 0.01 0.1
+}
+Wall {
+  translation -0.0449412 -0.0567667 0
+  name "wall(6)"
   size 0.25 0.01 0.1
 }
 Wall {
